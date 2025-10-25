@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder - Phase 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Form Builder Application</h1>
+        </header>
+        
+        <div class="app-container">
+            <div class="toolbox">
+                <h2>Field Types</h2>
+                <div class="field-types">
+                    <div class="field-type" data-type="text">Text Input</div>
+                    <div class="field-type" data-type="email">Email Input</div>
+                    <div class="field-type" data-type="number">Number Input</div>
+                    <div class="field-type" data-type="textarea">Text Area</div>
+                    <div class="field-type" data-type="select">Dropdown</div>
+                    <div class="field-type" data-type="checkbox">Checkbox</div>
+                    <div class="field-type" data-type="radio">Radio Buttons</div>
+                    <div class="field-type" data-type="date">Date Picker</div>
+                </div>
+                
+                <div class="form-actions">
+                    <button id="saveForm" class="btn btn-primary">Save Form</button>
+                    <button id="resetForm" class="btn btn-danger">Reset Form</button>
+                </div>
+            </div>
+            
+            <div class="form-builder">
+                <h2>Form Builder</h2>
+                <div class="form-area" id="formArea">
+                    <div class="empty-state" id="emptyState">
+                        <p>Drag field types here to start building your form</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-preview">
+                <h2>Form Preview</h2>
+                <div class="form-title">
+                    <h3>My Custom Form</h3>
+                </div>
+                <div id="formPreview">
+                    <div class="empty-state">
+                        <p>Your form will appear here</p>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="testForm" class="btn btn-success">Test Form</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="saved-forms">
+            <h2>Saved Forms</h2>
+            <div id="savedFormsList">
+                <div class="empty-state">
+                    <p>No forms saved yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
